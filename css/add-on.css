@@ -1,0 +1,7 @@
+.flag-icon-pt-br {
+    background-image: url(../flags/4x3/pt-br.svg);
+}
+
+.flag-icon-pt-br .flag-icon-squared {
+    background-image: url(../flags/1x1/pt-br.svg);
+}
