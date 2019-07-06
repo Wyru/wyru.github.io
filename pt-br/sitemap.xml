@@ -3,91 +3,91 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://willsaymon.com/blog/</loc>
+    <loc>https://willsaymon.com.br/blog/</loc>
     <lastmod>2019-07-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://willsaymon.com/categories/</loc>
-    <lastmod>2019-07-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://willsaymon.com/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="https://willsaymon.com/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://willsaymon.com/blog/unity-5-movimentacao-do-mario/</loc>
-    <lastmod>2019-07-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://willsaymon.com/categories/iniciantes/</loc>
-    <lastmod>2019-07-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://willsaymon.com/categories/unity-5/</loc>
-    <lastmod>2019-07-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://willsaymon.com/</loc>
+    <loc>https://willsaymon.com.br/categories/</loc>
     <lastmod>2019-07-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://willsaymon.com/en/"
+                href="https://willsaymon.com.br/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://willsaymon.com/"
+                href="https://willsaymon.com.br/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://willsaymon.com/sobre/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+    <loc>https://willsaymon.com.br/blog/unity-5-movimentacao-do-mario/</loc>
+    <lastmod>2019-07-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://willsaymon.com/curriculum/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+    <loc>https://willsaymon.com.br/categories/iniciantes/</loc>
+    <lastmod>2019-07-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://willsaymon.com/portfolio/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+    <loc>https://willsaymon.com.br/categories/unity-5/</loc>
+    <lastmod>2019-07-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://willsaymon.com/contato/</loc>
-  </url>
-  
-  <url>
-    <loc>https://willsaymon.com/tags/</loc>
+    <loc>https://willsaymon.com.br/</loc>
+    <lastmod>2019-07-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://willsaymon.com/en/tags/"
+                href="https://willsaymon.com.br/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://willsaymon.com/tags/"
+                href="https://willsaymon.com.br/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://willsaymon.com.br/sobre/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://willsaymon.com.br/curriculum/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://willsaymon.com.br/portfolio/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://willsaymon.com.br/contato/</loc>
+  </url>
+  
+  <url>
+    <loc>https://willsaymon.com.br/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://willsaymon.com.br/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://willsaymon.com.br/tags/"
                 />
   </url>
   

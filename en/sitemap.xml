@@ -3,47 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://willsaymon.com/en/categories/</loc>
+    <loc>https://willsaymon.com.br/en/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://willsaymon.com/categories/"
+                href="https://willsaymon.com.br/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://willsaymon.com/en/categories/"
+                href="https://willsaymon.com.br/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://willsaymon.com/en/tags/</loc>
+    <loc>https://willsaymon.com.br/en/tags/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://willsaymon.com/tags/"
+                href="https://willsaymon.com.br/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://willsaymon.com/en/tags/"
+                href="https://willsaymon.com.br/en/tags/"
                 />
   </url>
   
   <url>
-    <loc>https://willsaymon.com/en/</loc>
+    <loc>https://willsaymon.com.br/en/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://willsaymon.com/"
+                href="https://willsaymon.com.br/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://willsaymon.com/en/"
+                href="https://willsaymon.com.br/en/"
                 />
   </url>
   
