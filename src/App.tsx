@@ -1,18 +1,37 @@
-import React from "react";
-import { useSpring, animated } from "react-spring";
+import React, { useState, useEffect } from "react";
+import useWindowDimensions from "./utils/useWindowDimensions";
 import Particles from "react-particles-js";
 import "./App.css";
 
 const App: React.FC = () => {
-  const [props, set] = useSpring(() => ({
-    xy: [0,0],
-    config: { mass: 10, tension: 550, friction: 140 }
-  }));
+  const { height, width } = useWindowDimensions();
+  const [mousePosition, setMousePosition] = useState<Array<number>>([0, 0]);
 
-  const calc = (x: number, y: number) => [
-    x - window.innerWidth / 2,
-    y - window.innerHeight / 2
-  ];
+  const calc = (totalDeltaX: number, totalDeltaY: number) => {
+    const halfx = width / 2;
+    let xPos = mousePosition[0];
+    let xProgress;
+    if (xPos > halfx) {
+      xPos -= halfx;
+      xProgress = xPos / halfx;
+    } else {
+      xProgress = -1 + xPos / halfx;
+    }
+    const deltaX = totalDeltaX * xProgress;
+
+    const halfy = height / 2;
+    let yPos = mousePosition[1];
+    let yProgress;
+    if (yPos > halfy) {
+      yPos -= halfy;
+      yProgress = yPos / halfy;
+    } else {
+      yProgress = -1 + yPos / halfy;
+    }
+    const deltaY = totalDeltaY * yProgress;
+
+    return `translate3d(${deltaX}%,${deltaY}%,0)`;
+  };
 
   return (
     <div className="App">
@@ -20,7 +39,9 @@ const App: React.FC = () => {
       <div className="bgShadow"></div>
       <div
         className="pageContent"
-        onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
+        onMouseMove={({ clientX: x, clientY: y }) => {
+          setMousePosition([x, y]);
+        }}
       >
         <Particles
           className="pageParticles"
@@ -80,20 +101,13 @@ const App: React.FC = () => {
           }}
         />
         <div>
-          <animated.div
-            className="bigName"
-            // @ts-ignore
-            style={{
-              transform: props.xy.interpolate(xy => {
-                console.log(xy);
-                return `translate3d(${xy / 10}px,${xy/ 10}px,0)`;
-              })
-            }}
-          >
-            Will Saymon
-          </animated.div>
+          <div className="bigName">
+            <div style={{ transform: calc(1, 1) }}>Will Saymon</div>
+          </div>
           <div className="quotte">
-            "You can't move others hearts, unless you can move your own."
+            <div style={{ transform: calc(0.5, 0.5) }}>
+              "You can't move others hearts, unless you can move your own."
+            </div>
           </div>
         </div>
       </div>
