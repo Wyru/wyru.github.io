@@ -1,37 +1,10 @@
-import React, { useState, useEffect } from "react";
-import useWindowDimensions from "./utils/useWindowDimensions";
+import React, { useState} from "react";
 import Particles from "react-particles-js";
 import "./App.css";
+import ParallaxComponent from "./components/ParallaxComponent/ParallaxComponent";
 
 const App: React.FC = () => {
-  const { height, width } = useWindowDimensions();
   const [mousePosition, setMousePosition] = useState<Array<number>>([0, 0]);
-
-  const calc = (totalDeltaX: number, totalDeltaY: number) => {
-    const halfx = width / 2;
-    let xPos = mousePosition[0];
-    let xProgress;
-    if (xPos > halfx) {
-      xPos -= halfx;
-      xProgress = xPos / halfx;
-    } else {
-      xProgress = -1 + xPos / halfx;
-    }
-    const deltaX = totalDeltaX * xProgress;
-
-    const halfy = height / 2;
-    let yPos = mousePosition[1];
-    let yProgress;
-    if (yPos > halfy) {
-      yPos -= halfy;
-      yProgress = yPos / halfy;
-    } else {
-      yProgress = -1 + yPos / halfy;
-    }
-    const deltaY = totalDeltaY * yProgress;
-
-    return `translate3d(${deltaX}%,${deltaY}%,0)`;
-  };
 
   return (
     <div className="App">
@@ -102,12 +75,10 @@ const App: React.FC = () => {
         />
         <div>
           <div className="bigName">
-            <div style={{ transform: calc(1, 1) }}>Will Saymon</div>
+            <ParallaxComponent children={"Will Saymon"} deltaX={1} deltaY={1} mousePosition={mousePosition}/>
           </div>
           <div className="quotte">
-            <div style={{ transform: calc(0.5, 0.5) }}>
-              "You can't move others hearts, unless you can move your own."
-            </div>
+            <ParallaxComponent children={"You can't move others hearts, unless you can move your own."} deltaX={.5} deltaY={.5} mousePosition={mousePosition} />
           </div>
         </div>
       </div>
