@@ -1,23 +1,24 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import Particles from "react-particles-js";
-import "./App.css";
+import classes from "./App.module.css";
 import ParallaxComponent from "./components/ParallaxComponent/ParallaxComponent";
+import MyButton from "./components/MyButton/MyButton";
 
 const App: React.FC = () => {
   const [mousePosition, setMousePosition] = useState<Array<number>>([0, 0]);
 
   return (
-    <div className="App">
-      <div className="background"></div>
-      <div className="bgShadow"></div>
+    <div className={classes.App}>
+      <div className={classes.background}></div>
+      <div className={classes.bgShadow}></div>
       <div
-        className="pageContent"
+        className={classes.pageContent}
         onMouseMove={({ clientX: x, clientY: y }) => {
           setMousePosition([x, y]);
         }}
       >
         <Particles
-          className="pageParticles"
+          className={classes.pageParticles}
           params={{
             particles: {
               number: {
@@ -73,12 +74,30 @@ const App: React.FC = () => {
             }
           }}
         />
-        <div>
-          <div className="bigName">
-            <ParallaxComponent children={"Will Saymon"} deltaX={1} deltaY={1} mousePosition={mousePosition}/>
+        <div className={classes.home}>
+          <div className={classes.bigName}>
+            <ParallaxComponent
+              children={"Will Saymon"}
+              deltaX={1}
+              deltaY={1}
+              mousePosition={mousePosition}
+            />
           </div>
-          <div className="quotte">
-            <ParallaxComponent children={"You can't move others hearts, unless you can move your own."} deltaX={.5} deltaY={.5} mousePosition={mousePosition} />
+          <div className={classes.quotte}>
+            <ParallaxComponent
+              children={
+                "You can't move others hearts, unless you can move your own."
+              }
+              deltaX={0.5}
+              deltaY={0.5}
+              mousePosition={mousePosition}
+            />
+          </div>
+          <div className={classes.menu}>
+            <MyButton text={"Start"} onClick={() => {}}></MyButton>
+            <MyButton text={"Continue"} onClick={() => {}}></MyButton>
+            <MyButton text={"Options"} onClick={() => {}}></MyButton>
+            <MyButton text={"About"} onClick={() => {}}></MyButton>
           </div>
         </div>
       </div>
