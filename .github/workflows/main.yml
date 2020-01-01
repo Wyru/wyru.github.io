@@ -1,0 +1,11 @@
+name: CI
+on:
+  push:
+    branches:
+    - gh-pages
+jobs:
+  toMaster:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Push to master
+    - uses: tcitry/push-to-master@v1.0
