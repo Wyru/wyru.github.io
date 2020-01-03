@@ -20,7 +20,7 @@
 
 .pulse {
     --color: white;
-    --hover: #8200E5;
+    --hover: #F23989;
 }
 
 button {
@@ -30,7 +30,7 @@ button {
 button:hover,
 button:focus {
     border-color: var(--hover);
-    color: #8200E5;
+    color: #F23989;
 }
 
 button {

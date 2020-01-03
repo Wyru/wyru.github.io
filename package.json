@@ -1,5 +1,5 @@
 {
-  "homepage":"https://willsaymon.com.br/",
+  "homepage": "https://willsaymon.com.br/",
   "name": "itsme",
   "version": "0.1.0",
   "private": true,
@@ -12,16 +12,16 @@
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
     "react": "^16.12.0",
-    "react-anime": "^2.2.0",
     "react-dom": "^16.12.0",
     "react-parallax-mousemove": "^1.1.0",
     "react-particles-js": "^2.7.0",
+    "react-pose": "^4.0.10",
     "react-scripts": "3.3.0",
     "typescript": "^3.7.3"
   },
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -b master",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

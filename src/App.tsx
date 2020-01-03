@@ -3,9 +3,12 @@ import Particles from "react-particles-js";
 import classes from "./App.module.css";
 import ParallaxComponent from "./components/ParallaxComponent/ParallaxComponent";
 import MyButton from "./components/MyButton/MyButton";
+import MyPage from "./components/MyPage/MyPage";
 
 const App: React.FC = () => {
   const [mousePosition, setMousePosition] = useState<Array<number>>([0, 0]);
+  const [pageOneOpen, setPageOneOpen] = useState(false);
+  const [pageTwoOpen, setPageTwoOpen] = useState(false);
 
   return (
     <div className={classes.App}>
@@ -94,12 +97,54 @@ const App: React.FC = () => {
             />
           </div>
           <div className={classes.menu}>
-            <MyButton text={"Start"} onClick={() => {}}></MyButton>
-            <MyButton text={"Continue"} onClick={() => {}}></MyButton>
-            <MyButton text={"Options"} onClick={() => {}}></MyButton>
-            <MyButton text={"About"} onClick={() => {}}></MyButton>
+            <MyButton
+              text={"Sobre Mim"}
+              width={150}
+              onClick={() => {
+                setPageOneOpen(true);
+              }}
+            ></MyButton>
+
+            <MyButton
+              text={"Experiências"}
+              width={150}
+              onClick={() => {
+                setPageTwoOpen(true);
+              }}
+            ></MyButton>
+
+            <MyButton
+              text={"Portifólio"}
+              width={150}
+              onClick={() => {
+                setPageTwoOpen(true);
+              }}
+            ></MyButton>
+
+            <MyButton
+              text={"Contato"}
+              width={150}
+              onClick={() => {
+                setPageTwoOpen(true);
+              }}
+            ></MyButton>
           </div>
         </div>
+        <MyPage
+          open={pageOneOpen}
+          urlImage={"https://images5.alphacoders.com/985/985300.jpg"}
+          onClose={() => {
+            setPageOneOpen(false);
+          }}
+        ></MyPage>
+
+        <MyPage
+          open={pageTwoOpen}
+          urlImage={"https://images5.alphacoders.com/100/1007423.jpg"}
+          onClose={() => {
+            setPageTwoOpen(false);
+          }}
+        ></MyPage>
       </div>
     </div>
   );

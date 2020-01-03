@@ -6,6 +6,7 @@ body,
 #root,
 .App {
     height: 100%;
+    overflow: hidden;
 }
 
 .background {
@@ -32,7 +33,6 @@ body,
     display: flex;
     justify-content: center;
     height: 100%;
-
 }
 
 .bigName {
@@ -57,7 +57,7 @@ body,
     text-align: center;
 }
 
-.home{
+.home {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -69,5 +69,20 @@ body,
     flex-direction: column;
     align-items: center;
     margin-top: auto;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
+}
+
+@media (max-height: 899px) {
+    .bigName {
+        font-size: 5em;
+    }
+    .menu {
+        padding-bottom: 5%;
+    }
+}
+
+@media (min-height: 900px) {
+    .menu {
+        padding-bottom: 20%;
+    }
 }
